@@ -1,0 +1,46 @@
+package challnege.event.Domain;
+
+import java.sql.Date;
+import java.sql.Time;
+
+import static challnege.event.Crosscuting.helper.TimeHelper.getDefaultTimeIfNull;
+import static challnege.event.Crosscuting.helper.DateHelper.getDefaultDate;
+import static challnege.event.Crosscuting.helper.DateHelper.DEFAULT_DATE;
+import static challnege.event.Crosscuting.helper.TimeHelper.TIME;
+import static challnege.event.Crosscuting.helper.StringHelper.EMPTY;
+import static challnege.event.Domain.Builder.ClienteDTOBuilder.getClienteDTOBuilder; 
+
+public class EventosDTO {
+
+	private Date fecha;
+	private Time hora;
+	private ClienteDTO cliente;
+	private String salon;
+	
+	public Date getFecha() {
+		return fecha;
+	}
+	public void setFecha(Date fecha) {
+		this.fecha = fecha;
+	}
+	public Time getHora() {
+		return hora;
+	}
+	public void setHora(Time hora) {
+		this.hora = hora;
+	}
+	public ClienteDTO getCliente() {
+		return cliente;
+	}
+	public void setCliente(ClienteDTO cliente) {
+		this.cliente = cliente;
+	}
+	public String getSalon() {
+		return salon;
+	}
+	public void setSalon(String salon) {
+		this.salon = salon;
+	}
+	
+	
+}

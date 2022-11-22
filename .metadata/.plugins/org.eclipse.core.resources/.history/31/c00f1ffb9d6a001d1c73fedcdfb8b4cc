@@ -1,0 +1,5 @@
+package challnege.event.Domain;
+
+public class EventosDTO {
+
+}

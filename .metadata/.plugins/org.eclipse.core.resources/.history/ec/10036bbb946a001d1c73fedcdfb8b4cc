@@ -1,0 +1,8 @@
+package challnege.event.Domain.Builder;
+
+public class ClienteDTOBuilder {
+
+	private String nombre;
+	private String cc;
+	
+}

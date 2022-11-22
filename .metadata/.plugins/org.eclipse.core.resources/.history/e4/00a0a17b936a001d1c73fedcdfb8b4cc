@@ -1,0 +1,31 @@
+package challnege.event.Domain;
+
+import static challnege.event.Crosscuting.helper.StringHelper.applyTrim;
+
+public class ClienteDTO {
+
+	private String nombre;
+	private String cc;
+	
+	public ClienteDTO(String nombre, String cc) {
+		super();
+		this.nombre = nombre;
+		this.cc = cc;
+	}
+	
+	public String getNombre() {
+		return nombre;
+	}
+	
+	public final void setNombre(final String nombre) {
+		this.nombre = applyTrim(nombre);
+	}
+	
+	public String getCc() {
+		return cc;
+	}
+	
+	public void setCc(String cc) {
+		this.cc = applyTrim(cc);
+	}
+}
