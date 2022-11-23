@@ -12,29 +12,29 @@ import static challnege.event.Domain.Builder.ClienteDTOBuilder.getClienteDTOBuil
 import static challnege.event.Crosscuting.helper.ObjectHelper.getDefaultIfNull;
 import static challnege.event.Crosscuting.helper.StringHelper.applyTrim;
 
-public class EventosDTO {
+public class EventoDTO {
 
 	private Date fecha;
 	private Time hora;
 	private ClienteDTO cliente;
 	private String salon;
 	
-	public EventosDTO() {
+	public EventoDTO() {
 		setCliente(getClienteDTOBuilder().build());
 		setFecha(DEFAULT_DATE);
 		setHora(TIME);
 		setSalon(EMPTY);
 	}
 	
-	public EventosDTO(final Date fecha,final Time hora,final ClienteDTO cliente,final String salon) {
+	public EventoDTO(final Date fecha,final Time hora,final ClienteDTO cliente,final String salon) {
 		setCliente(cliente);
 		setFecha(fecha);
 		setHora(hora);
 		setSalon(salon);
 	}
 	
-	public static final EventosDTO crear(final Date fecha,final Time hora,final ClienteDTO cliente,final String salon) {
-		return new EventosDTO(fecha,hora,cliente,salon);
+	public static final EventoDTO crear(final Date fecha,final Time hora,final ClienteDTO cliente,final String salon) {
+		return new EventoDTO(fecha,hora,cliente,salon);
 	}
 	
 	public Date getFecha() {

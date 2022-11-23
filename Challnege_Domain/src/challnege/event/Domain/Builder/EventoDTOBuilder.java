@@ -4,23 +4,23 @@ import java.sql.Date;
 import java.sql.Time;
 
 import challnege.event.Domain.ClienteDTO;
-import challnege.event.Domain.EventosDTO;
+import challnege.event.Domain.EventoDTO;
 
-import static challnege.event.Domain.EventosDTO.crear;
+import static challnege.event.Domain.EventoDTO.crear;
 
-public class EventosDTOBuilder {
+public class EventoDTOBuilder {
 
 	private Date fecha;
 	private Time hora;
 	private ClienteDTO cliente;
 	private String salon;
 	
-	private EventosDTOBuilder() {
+	private EventoDTOBuilder() {
 		super();
 	}
 	
-	public static final EventosDTOBuilder getEventosDTOBuilder() {
-		return new EventosDTOBuilder();
+	public static final EventoDTOBuilder getEventosDTOBuilder() {
+		return new EventoDTOBuilder();
 	}
 	
 	public void setFecha(Date fecha) {
@@ -36,7 +36,7 @@ public class EventosDTOBuilder {
 		this.salon = salon;
 	}
 	
-	public final EventosDTO build() {
+	public final EventoDTO build() {
 		return crear(fecha,hora,cliente,salon);
 	}
 }

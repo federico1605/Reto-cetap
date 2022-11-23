@@ -47,3 +47,16 @@
 2022-11-22 12:12:13,876 [Worker-57: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Federico\Desktop\Reto cetap\Challnege_Service\src\main\resources
 2022-11-22 12:12:13,880 [Worker-57: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2022-11-22 12:12:13,895 [Worker-57: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Federico\Desktop\Reto cetap\Challnege_Service\src\test\resources
+2022-11-22 21:46:17,622 [Worker-178: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Challenge_API:0.0.1-SNAPSHOT @ C:\Users\Federico\Desktop\Reto cetap\Challenge_API\pom.xml.
+2022-11-22 21:46:21,231 [Worker-178: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Challenge_API/src/main/java
+2022-11-22 21:46:21,231 [Worker-178: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Challenge_API/src/main/resources
+2022-11-22 21:46:21,239 [Worker-178: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Challenge_API/src/main/resources
+2022-11-22 21:46:21,250 [Worker-178: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Challenge_API/src/test/java
+2022-11-22 21:46:23,148 [Worker-178: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 6 sec
+2022-11-22 21:46:23,152 [Worker-178: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-11-22 21:46:24,790 [Worker-178: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Challenge_API:0.0.1-SNAPSHOT @ C:\Users\Federico\Desktop\Reto cetap\Challenge_API\pom.xml.
+2022-11-22 21:46:26,713 [Worker-178: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Challenge_API/src/main/java
+2022-11-22 21:46:26,713 [Worker-178: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Challenge_API/src/main/resources
+2022-11-22 21:46:26,714 [Worker-178: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Challenge_API/src/main/resources
+2022-11-22 21:46:26,716 [Worker-178: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Challenge_API/src/test/java
+2022-11-22 21:46:29,566 [Worker-178: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 6 sec
