@@ -3,8 +3,8 @@ package challnege.event.response;
 import java.util.ArrayList;
 import java.util.List;
 
-import challnege.event.Crosscuting.helper.Message;
 import challnege.event.Crosscuting.helper.ObjectHelper;
+import challnege.event.Crosscuting.messages.Message;
 
 public class Response<T> {
 

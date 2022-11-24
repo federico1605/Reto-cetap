@@ -1,8 +1,5 @@
 package challnege.event.Domain.Builder;
 
-import java.sql.Date;
-import java.sql.Time;
-
 import challnege.event.Domain.ClienteDTO;
 import challnege.event.Domain.EventoDTO;
 
@@ -10,8 +7,8 @@ import static challnege.event.Domain.EventoDTO.crear;
 
 public class EventoDTOBuilder {
 
-	private Date fecha;
-	private Time hora;
+	private String fecha;
+	private String hora;
 	private ClienteDTO cliente;
 	private String salon;
 	
@@ -23,10 +20,10 @@ public class EventoDTOBuilder {
 		return new EventoDTOBuilder();
 	}
 	
-	public void setFecha(Date fecha) {
+	public void setFecha(String fecha) {
 		this.fecha = fecha;
 	}
-	public void setHora(Time hora) {
+	public void setHora(String hora) {
 		this.hora = hora;
 	}
 	public void setCliente(ClienteDTO cliente) {

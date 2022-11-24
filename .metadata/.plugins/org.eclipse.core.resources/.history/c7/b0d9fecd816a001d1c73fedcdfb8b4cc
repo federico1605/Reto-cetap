@@ -1,5 +1,0 @@
-package reto.eventos;
-
-public interface Eventos {
-
-}

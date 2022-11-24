@@ -16,4 +16,16 @@
       </plugin>
     </plugins>
   </build>
+  <dependencies>
+  	<dependency>
+	  <groupId>challnege.event</groupId>
+	  <artifactId>Challnege_Domain</artifactId>
+	  <version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  	<dependency>
+	  <groupId>challnege.event</groupId>
+	  <artifactId>Challnege_Crosscuting</artifactId>
+	  <version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
 </project>

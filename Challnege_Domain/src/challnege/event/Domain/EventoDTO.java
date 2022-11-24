@@ -1,12 +1,5 @@
 package challnege.event.Domain;
 
-import java.sql.Date;
-import java.sql.Time;
-
-import static challnege.event.Crosscuting.helper.TimeHelper.getDefaultTimeIfNull;
-import static challnege.event.Crosscuting.helper.DateHelper.getDefaultDate;
-import static challnege.event.Crosscuting.helper.DateHelper.DEFAULT_DATE;
-import static challnege.event.Crosscuting.helper.TimeHelper.TIME;
 import static challnege.event.Crosscuting.helper.StringHelper.EMPTY;
 import static challnege.event.Domain.Builder.ClienteDTOBuilder.getClienteDTOBuilder; 
 import static challnege.event.Crosscuting.helper.ObjectHelper.getDefaultIfNull;
@@ -14,40 +7,40 @@ import static challnege.event.Crosscuting.helper.StringHelper.applyTrim;
 
 public class EventoDTO {
 
-	private Date fecha;
-	private Time hora;
+	private String fecha;
+	private String hora;
 	private ClienteDTO cliente;
 	private String salon;
 	
 	public EventoDTO() {
 		setCliente(getClienteDTOBuilder().build());
-		setFecha(DEFAULT_DATE);
-		setHora(TIME);
+		setFecha(EMPTY);
+		setHora(EMPTY);
 		setSalon(EMPTY);
 	}
 	
-	public EventoDTO(final Date fecha,final Time hora,final ClienteDTO cliente,final String salon) {
+	public EventoDTO(final String fecha,final String hora,final ClienteDTO cliente,final String salon) {
 		setCliente(cliente);
 		setFecha(fecha);
 		setHora(hora);
 		setSalon(salon);
 	}
 	
-	public static final EventoDTO crear(final Date fecha,final Time hora,final ClienteDTO cliente,final String salon) {
+	public static final EventoDTO crear(final String fecha,final String hora,final ClienteDTO cliente,final String salon) {
 		return new EventoDTO(fecha,hora,cliente,salon);
 	}
 	
-	public Date getFecha() {
+	public String getFecha() {
 		return fecha;
 	}
-	public final void setFecha(final Date fecha) {
-		this.fecha = getDefaultDate(fecha);
+	public final void setFecha(final String fecha) {
+		this.fecha = fecha;
 	}
-	public Time getHora() {
+	public String getHora() {
 		return hora;
 	}
-	public final void setHora(final Time hora) {
-		this.hora = getDefaultTimeIfNull(hora);
+	public final void setHora(final String hora) {
+		this.hora = hora;
 	}
 	public ClienteDTO getCliente() {
 		return cliente;

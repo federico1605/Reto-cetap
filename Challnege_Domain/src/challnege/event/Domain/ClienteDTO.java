@@ -1,7 +1,8 @@
 package challnege.event.Domain;
 
 import static challnege.event.Crosscuting.helper.StringHelper.applyTrim;
-import static challnege.event.Crosscuting.helper.StringHelper.EMPTY;;
+
+import static challnege.event.Crosscuting.helper.StringHelper.EMPTY;
 
 public class ClienteDTO {
 
